@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent Marker");
+
+#app {
+  background-position: center;
+}
+#app #sortable,
+#app main {
+  padding: 25px;
+}
+#config-buttons {
+  bottom: 50%;
+  transform: translateY(50%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) -1px 1px 1px 0, rgba(255, 255, 255, 0.1) 0 -1px 1px 0,
+    rgba(0, 0, 0, 0.1) -1px 0 20px 5px;
+  background-color: rgba(40, 40, 40, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+#config-buttons a {
+  background: none;
+}
+#config-buttons a svg {
+  transition: all 0.1s linear;
+  color: rgba(255, 255, 255, 0.5);
+}
+#config-buttons a:hover svg {
+  transform: scale(1.1);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.black {
+  color: white !important;
+}
+
+.item {
+box-shadow: rgba(0, 0, 0, 0.1) -2px -2px 5px 0, rgba(0, 0, 0, 0.2) 0px 20px 25px -5px,
+rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important;
+  border-radius: 20px 7px 20px 7px;
+  background-image: none;
+  border: hidden;
+  outline: hidden;
+  height: 84px;
+  width: 300px;
+  margin: 1.4rem;
+  padding: 1rem 60px 1rem 1rem;
+  transition: all 1.5s easy-in-out;
+  transition-property: transform, box-shadow, background-color;
+background-color: rgba(255, 255, 255, 0.2) !important;
+font-family: Permanent Marker;
+font-size: 32px;
+letter-spacing: 2px;
+}
+
+.item:hover {
+background-color: rgba(40, 40, 40, 0.3) !important;
+box-shadow: rgba(66, 66, 66, 0.1) 0px 30px 30px -17px !important;
+transform: scale(1.1) skew(-4deg) ;
+}
